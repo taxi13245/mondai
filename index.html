@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>問題文可愛く変換器</title>
+	<link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body>
+	<h1 class="color">問題文可愛く変換器</h1><p></p>
+	<h1 style="border-bottom: solid 10px gray; " class="title">問題文を入力してください。</h1>
+	<form action="javascript:void(0)" method="get" name="henkan_form">
+		<input type="text" name="henkan" style="width: 500px; height: 60px;">
+		<input type="submit" value="変換" onClick="check();" style="width: 50px; height: 50px;">
+	</form>
+	<h2><br><br><hr width="100%" size="3">変換結果は下に表示されます。</h2>
+	<hr width="100%" size="3">
+	<h2 class="balloon">変換結果：<br><br><span id="kakka" class="color"></span><br><br></h2>
+	<div id="img"></div>
+	<h1><br><br><br><br><br></h1>
+	<h2 class="title">画像ファイルからテキストを抽出する方法 →<a href="./解説.html">ここ</a>をクリック</h2>
+	<script src="home.js">
+  </script>
+</body>
+</html>

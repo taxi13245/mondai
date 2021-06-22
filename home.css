@@ -1,0 +1,70 @@
+body{
+width:100%; /*ページ全体の幅は100%と指定する*/
+text-align:center; /*ページ全体を中央揃えにする*/
+/* background-color:lightyellow; */
+background-image: url("./backhart.jpg")
+}
+
+.title{
+position: relative;
+padding: 30px;
+background-color: lightgreen;
+display: inline-block;     /* 横幅を自動で変更 */
+margin-left: auto;
+margin-right: auto;
+border: 5px solid green;
+}
+/* 吹き出し本体 */
+.balloon{
+position: relative;
+padding: 30px;
+background-color: #fff3ad;
+display: inline-block;     /* 横幅を自動で変更 */
+margin-left: auto;
+margin-right: auto;
+border: 5px solid #ca8888;
+}
+
+/* beforeで三角を表現 */
+.balloon::before{
+content: '';
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+display: block;
+width: 0;
+height: 0;
+left: 0;
+bottom: -30px;
+border-top: 30px solid #ca8888;
+border-right: 40px solid transparent;
+border-left: 40px solid transparent;
+}
+.balloon::after{
+content: '';
+position: absolute;
+display: block;
+width: 0;
+height: 0;
+left: 0px;
+bottom: -24px;
+border-top: 30px solid #fff3ad;
+border-right: 40px solid transparent;
+border-left: 40px solid transparent;
+}
+.color{
+display:inline-block;
+color:#ffffff;            /* 文字の色 */
+text-shadow:
+  5px 5px 6px #ff7f7f,
+  -5px 5px 6px #ff7f7f,
+  5px -5px 6px #ff7f7f,
+  -5px -5px 6px #ff7f7f,
+  5px 0px 6px #ff7f7f,
+  0px 5px 6px #ff7f7f,
+  -5px 0px 6px #ff7f7f,
+  0px -5px 6px #ff7f7f;        /* 文字の影 */
+}
+.gazou{
+float: left;
+}
